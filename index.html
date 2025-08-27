@@ -54,7 +54,7 @@
         <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
 
-    <div class="main-section flex flex-row p-10 gap-5 justify-around">
+    <div class="main-section flex flex-row p-14 gap-10 justify-around">
         <div class="left-main grid grid-cols-3 grid-rows-3 gap-10">
             <div class="single-item w-[400px] bg-white p-8 flex flex-col justify-start rounded-2xl shadow-sm">
                 <div class="logos flex flex-row justify-between items-center">
@@ -269,11 +269,31 @@
 
         </div>
 
-        <div class="right-main">
-            <div class="w-[450px] h-full bg-white p-8 flex flex-col justify-start rounded-2xl shadow-sm">
-                
+
+        <div class="right-main w-[450px] max-h-full bg-white p-8 rounded-2xl shadow-sm">
+            <div class="upper-details flex flex-row justify-between items-center">
+                <p class="font-bold text-xl"><i class="fa-regular fa-clock"></i> Call History</p>
+                <button class="btn bg-green-600 text-white px-7 py-5 rounded-3xl">Clear</button>
             </div>
+
+            <div class="call-history flex flex-col">
+                <div class="single-item rounded-2xl w-full bg-gray-50 mt-5 flex flex-row items-center p-5">
+                    <div class="left-details w-[65%] ">
+                        <p class="font-semibold text-2xl mb-2">National Emergency Number</p>
+                        <span class="text-gray-600 text-xl">1994-999999</span>
+                    </div>
+
+                    <div class="right-details w-[35%] text-right">
+
+                        <p class="text-lg font-medium  text-black">11:36:58 AM</p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
+
     </div>
     
 </body>
