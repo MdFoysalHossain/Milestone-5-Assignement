@@ -155,6 +155,8 @@ function copyNum(num){
     
     let number = document.getElementById(num).innerText;
     navigator.clipboard.writeText(number);
+    alert(`Number Coppied: ${number}`);
+
 }
 
 
