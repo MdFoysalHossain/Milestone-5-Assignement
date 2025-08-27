@@ -63,7 +63,7 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/emergency.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart1" class="heart text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name1" class="font-bold text-[24px] mt-5">National Emergency Number</p>
@@ -87,7 +87,7 @@
                         <img class="h-12 bg-[#DFEFFF] p-2 rounded-xl" src="images/police.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart2"  class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name2" class="font-bold text-[24px] mt-5">Police Helpline Number</p>
@@ -110,17 +110,17 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/fire-service.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart3"  class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name3" class="font-bold text-[24px] mt-5">Fire Service Number</p>
                 <span class="text-gray-600 ">Fire Service</span>
 
                 <p id="num3" class="font-bold text-3xl mt-5">999</p>
-                <span class="bg-gray-100 rounded-3xl text-gray-600 py-2 px-5 w-14 mt-1">Fire</span>
+                <span class="bg-gray-100 rounded-3xl text-gray-600 py-2 px-5 w-16 mt-1">Fire</span>
 
                 <div class="buttons flex flex-row gap-2 mt-5">
-                    <button id="copy3 class="btn text-gray-600 w-[50%] rounded-xl bg-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="copy3" class="btn text-gray-600 w-[50%] rounded-xl bg-white"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button  id="call3" class="btn bg-green-600 text-white  w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/ambulance.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart4" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name4" class="font-bold text-[24px] mt-5">Ambulance Service</p>
@@ -157,7 +157,7 @@
                         <img class="h-12 bg-[#DFEFFF] p-2 rounded-xl" src="images/police.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart5" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name5" class="font-bold text-[24px] mt-5">Women & Child Helpline</p>
@@ -180,7 +180,7 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/fire-service.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart6" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name6" class="font-bold text-[24px] mt-5">Anti-Corruption Helpline</p>
@@ -203,7 +203,7 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/emergency.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart7" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name7" class="font-bold text-[24px] mt-5">Electricity Helpline</p>
@@ -227,7 +227,7 @@
                         <img class="h-12 bg-[#DFEFFF] p-2 rounded-xl" src="images/police.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart8" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name8" class="font-bold text-[24px] mt-5">Brac Helpline</p>
@@ -250,7 +250,7 @@
                         <img class="h-12 bg-[#FFE3E2] p-2 rounded-xl" src="images/fire-service.png" alt="">
                     </div>
 
-                    <i class="text-xl fa-regular fa-heart"></i>
+                    <i id="heart9" class="text-xl fa-regular fa-heart"></i>
                 </div>
 
                 <p id="name9" class="font-bold text-[24px] mt-5">Bangladesh Railway Helpline </p>
@@ -273,25 +273,11 @@
         <div class="right-main w-[450px] max-h-full bg-white p-8 rounded-2xl shadow-sm">
             <div class="upper-details flex flex-row justify-between items-center">
                 <p class="font-bold text-xl"><i class="fa-regular fa-clock"></i> Call History</p>
-                <button class="btn bg-green-600 text-white px-7 py-5 rounded-3xl">Clear</button>
+                <button id="clear-btn" class="btn bg-green-600 text-white px-7 py-5 rounded-3xl">Clear</button>
             </div>
 
             <div id="call-history" class="flex flex-col">
-                <!-- <div class="single-item rounded-2xl w-full bg-gray-50 mt-5 flex flex-row items-center p-5">
-                    <div class="left-details w-[65%] ">
-                        <p class="font-semibold text-2xl mb-2">National Emergency Number</p>
-                        <span class="text-gray-600 text-xl">1994-999999</span>
-                    </div>
-
-                    <div class="right-details w-[35%] text-right">
-
-                        <p class="text-lg font-medium  text-black">11:36:58 AM</p>
-                    </div>
-                </div> -->
             </div>
-
-
-
         </div>
 
     </section>

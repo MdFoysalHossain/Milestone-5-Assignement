@@ -39,6 +39,31 @@ function userCalled(num, name){
 }
 
 
+function heartClicked(){
+    console.log("Heart Clicked");
+    heartPoint += 1;
+    document.getElementById("heart-count").innerText = heartPoint;
+
+}
+
+
+function copyNum(){
+
+}
+
+
+document.getElementById("clear-btn").addEventListener("click", function(){
+    console.log("Clear ButtonClicked");
+    let callHistory = document.getElementById("call-history");
+    callHistory.innerHTML = '';
+});
+
+
+
+
+
+
+
 document.getElementById("call1").addEventListener("click", function(){
     userCalled("num1", "name1");
 });
@@ -78,3 +103,51 @@ document.getElementById("call8").addEventListener("click", function(){
 document.getElementById("call9").addEventListener("click", function(){
     userCalled("num9", "name9");
 });
+
+
+
+
+
+document.getElementById("heart1").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart2").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart3").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart4").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart5").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart6").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart7").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart8").addEventListener("click", function(){
+    heartClicked();
+});
+
+document.getElementById("heart9").addEventListener("click", function(){
+    heartClicked();
+});
+
+
+
+
+
+
+
+
