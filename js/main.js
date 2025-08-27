@@ -7,12 +7,13 @@ document.getElementById("coin-count").innerText = coinPoint;
 document.getElementById("copy-count").innerText = copyPoint;
 
 
-function userCalled(num, name){
+function userCalled(num, name, service){
     let serviceName = document.getElementById(name).innerText;
     let serviceNum = document.getElementById(num).innerText;
+    let serviceCall = document.getElementById(service).innerText;
 
     if(coinPoint >= 20){
-        alert(`Calling ${serviceName}, Num: ${serviceNum}`)
+        alert(`Calling ${serviceCall}, Num: ${serviceNum}`)
         coinPoint -= 20;
         document.getElementById("coin-count").innerText = coinPoint;
 
@@ -47,9 +48,6 @@ function heartClicked(){
 }
 
 
-function copyNum(){
-
-}
 
 
 document.getElementById("clear-btn").addEventListener("click", function(){
@@ -65,43 +63,43 @@ document.getElementById("clear-btn").addEventListener("click", function(){
 
 
 document.getElementById("call1").addEventListener("click", function(){
-    userCalled("num1", "name1");
+    userCalled("num1", "name1", "service1");
 });
 
 document.getElementById("call2").addEventListener("click", function(){
-    userCalled("num2", "name2");
+    userCalled("num2", "name2", "service2");
 });
 
 
 document.getElementById("call3").addEventListener("click", function(){
-    userCalled("num3", "name3");
+    userCalled("num3", "name3", "service3");
 });
 
 document.getElementById("call4").addEventListener("click", function(){
-    userCalled("num4", "name4");
+    userCalled("num4", "name4", "service4");
 });
 
 document.getElementById("call5").addEventListener("click", function(){
-    userCalled("num5", "name5");
+    userCalled("num5", "name5", "service5");
 });
 
 
 document.getElementById("call6").addEventListener("click", function(){
-    userCalled("num6", "name6");
+    userCalled("num6", "name6", "service6");
 });
 
 
 document.getElementById("call7").addEventListener("click", function(){
-    userCalled("num7", "name7");
+    userCalled("num7", "name7", "service7");
 });
 
 document.getElementById("call8").addEventListener("click", function(){
-    userCalled("num8", "name8");
+    userCalled("num8", "name8", "service8");
 });
 
 
 document.getElementById("call9").addEventListener("click", function(){
-    userCalled("num9", "name9");
+    userCalled("num9", "name9", "service9");
 });
 
 
@@ -144,6 +142,60 @@ document.getElementById("heart9").addEventListener("click", function(){
     heartClicked();
 });
 
+
+
+
+
+
+
+function copyNum(num){
+    console.log("Copy Clicked");
+    copyPoint += 1;
+    document.getElementById("copy-count").innerText = copyPoint;
+    
+    let number = document.getElementById(num).innerText;
+    navigator.clipboard.writeText(number);
+}
+
+
+document.getElementById("copy1").addEventListener("click", function(event){
+    copyNum("num1");
+});
+
+document.getElementById("copy2").addEventListener("click", function(event){
+    copyNum("num2");
+});
+
+
+document.getElementById("copy3").addEventListener("click", function(event){
+    copyNum("num3");
+});
+
+
+document.getElementById("copy4").addEventListener("click", function(event){
+    copyNum("num4");
+});
+
+
+document.getElementById("copy5").addEventListener("click", function(event){
+    copyNum("num5");
+});
+
+document.getElementById("copy6").addEventListener("click", function(event){
+    copyNum("num6");
+});
+
+document.getElementById("copy7").addEventListener("click", function(event){
+    copyNum("num7");
+});
+
+document.getElementById("copy8").addEventListener("click", function(event){
+    copyNum("num8");
+});
+
+document.getElementById("copy9").addEventListener("click", function(event){
+    copyNum("num9");
+});
 
 
 
